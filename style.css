@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit',sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 15rem;
+    height: 23rem;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.8rem;
+}
+.top{
+   width: 100%;
+   height: 55%;
+   background-image: url(image-equilibrium.jpg);
+   background-position: center;
+   background-size: cover;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.cor{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#eye{
+    display: none;
+
+}
+.text{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title{
+    font-size: 13px;
+    color: white;
+}
+p{
+    font-weight: 300;
+    font-size:13px ;
+    color: hsl(215, 51%, 70%);
+}
+.row{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    gap:0.2rem;
+    flex-direction: row;
+}
+.nft{
+    font-size: 11px;
+    color: hsl(178, 100%, 50%);
+}
+.clock{
+    font-size: 10px;
+    color: hsl(215, 51%, 70%);;
+}
+.divider{
+    width:34%;
+    padding: 0.5;
+}
+.avatar{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    gap: 0.5rem;
+}
+.picture{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image:url(image-avatar.png);
+    background-position: center;
+    background-size: cover;
+    outline: white;
+    cursor: pointer;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+.name1{
+    font-size: 10px;
+    color:hsl(215, 51%, 70%);
+}
+.name2{
+    font-size: 10px;
+    color: white;
+}
+.top:hover #eye{
+    display: flex;
+}
+.cor:hover{
+    background-color: hsla(178, 100%, 50%, 0.113);
+    backdrop-filter: blur(10px);
+}
+@media(min-width:1920px){
+   .card{
+    transform:scale(1.7);
+   }
+}
+@media (max-width:500px) {
+    .card{
+        transform: scale(1.3);
+    }
+    
+}
